@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    width: 100%;
+    height: 100vh;
+}
+#home{
+    background-color: cornflowerblue;
+}
+#about{
+     background-color: crimson;
+    }
+#contact{
+    background-color: cyan;
+}
+#blog{
+    background-color: darkorange;
+}
+#login{
+    background-color: chartreuse;
+}
+header{
+    width: 100%;
+    background-color: cornflowerblue;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    transition: 0.5s;
+}
+.container{
+    width: 880px;
+    margin: auto;
+}
+ nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ nav ul{
+    display: flex;
+    list-style: none;
+    margin-top: 20px;
+ }
+ nav ul li{
+    margin: 5px 10px;
+    padding: 10px;
+ }
+ nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+ }
+ .logo{
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 10px;
+ }
+ .icon i{
+    display: none;
+ }
+ .active{
+    background-color: #000;
+    color: #fff;
+    transition: 0.5s;
+ }
+ @media(max-width:768px){
+      .ul{
+        position: fixed;
+        width: 100%;
+        background-color: #000;
+        height: 100vh;
+        top: 60px;
+        left: 100%;
+        transition: 0.5s;
+    }
+    nav ul{
+        display: block;
+        text-align: center;
+    }
+    .container{
+        width: 100%;
+    }
+.icon i{
+    font-size: 28px;
+    color: #fff;
+    margin-right: 20px;
+    margin-top: 25px;
+    display: block;
+}
+.toggled{
+    left: 0;
+    transition: 0.5s;
+}
+ }
